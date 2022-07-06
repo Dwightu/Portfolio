@@ -35,7 +35,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="http://www.logicstime.com/" target="_blank">
+        <Navbar.Brand href="/" target="_blank">
           Dehui Yu
         </Navbar.Brand>
         <Navbar.Toggle

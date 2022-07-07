@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import developer from "../../Assets/developer.jpg";
-import { SKILLS, TOOLS } from "../../Constants";
+import { FRONTENTSKILLS, BACKENDSKILLS, TOOLS, LANGUAGES } from "../../Constants";
 
 function About() {
   return (
@@ -30,9 +30,19 @@ function About() {
         <Row className="skill-tools-wrapper">
           <Col className="skill-wrapper">
             <h1 className="project-heading">
-              Professional <strong className="purple">Skillset </strong>
+              <strong className="purple">Front end development</strong>
             </h1>
-            {SKILLS.map((skill, index) => (
+            {FRONTENTSKILLS.map((skill, index) => (
+              <Techstack
+                name={skill.name}
+                initialRating={skill.initialRating}
+                key={index}
+              />
+            ))}
+            <h1 className="project-heading">
+              <strong className="purple">Back end development</strong>
+            </h1>
+            {BACKENDSKILLS.map((skill, index) => (
               <Techstack
                 name={skill.name}
                 initialRating={skill.initialRating}
@@ -40,7 +50,16 @@ function About() {
               />
             ))}
           </Col>
+
           <Col className="skill-wrapper">
+            <h1 className="project-heading">
+              <strong className="purple">Programming Language</strong>
+            </h1>
+            {LANGUAGES.map((tool, index) => (
+              <ul key={index} className="tool-name">
+                <li>{tool}</li>
+              </ul>
+            ))}
             <h1 className="project-heading">
               <strong className="purple">Tools | Knowledge</strong>
             </h1>

@@ -26,18 +26,22 @@ export const PROJECTS = [
   }
 ];
 
-export const SKILLS = [
-  { name: "JavaScript", initialRating: 4 },
-  { name: "TypeScript", initialRating: 3 },
-  { name: "Python", initialRating: 3 },
-  { name: "Java", initialRating: 3 },
+export const FRONTENTSKILLS = [
   { name: "React", initialRating: 4 },
-  { name: "HTML/CSS", initialRating: 3 },
   { name: "BootStrap", initialRating: 4 },
-  { name: "Expressjs", initialRating: 5 },
-  { name: "Nextjs", initialRating: 4 },
-  { name: "Unit-Testing(Jest)", initialRating: 3 },
-  { name: "Git", initialRating: 4 },
+  { name: "JavaScript", initialRating: 4 },
+  { name: "HTML/CSS", initialRating: 3 },
 ];
+
+export const BACKENDSKILLS = [
+  { name: "ExpressJS/JavaScript", initialRating: 5 },
+  { name: "NextJS/JavaScript", initialRating: 4 },
+  { name: "BootStrap", initialRating: 4 },
+  { name: "Unit-Testing(Jest)", initialRating: 4 },
+  { name: "Springboot/Java", initialRating: 3 },
+
+];
+
+export const LANGUAGES = ["Javascript", "Python", "Java"]
 
 export const TOOLS = ["Microservice", "Docker", "Kubernetes", "Jira", "Git", "Chrome DevTools", "Npm (Node Package Manager)", "CI/CD pipeline", "Linux", "Postman"]

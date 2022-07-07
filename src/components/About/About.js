@@ -29,6 +29,8 @@ function About() {
         </Row>
         <Row className="skill-tools-wrapper">
           <Col className="skill-wrapper">
+            <br></br>
+
             <h1 className="project-heading">
               <strong className="purple">Front end development</strong>
             </h1>
@@ -39,6 +41,7 @@ function About() {
                 key={index}
               />
             ))}
+            <br></br>
             <h1 className="project-heading">
               <strong className="purple">Back end development</strong>
             </h1>
@@ -49,9 +52,13 @@ function About() {
                 key={index}
               />
             ))}
+            <br></br>
+
           </Col>
 
           <Col className="skill-wrapper">
+            <br></br>
+
             <h1 className="project-heading">
               <strong className="purple">Programming Language</strong>
             </h1>
@@ -60,6 +67,7 @@ function About() {
                 <li>{tool}</li>
               </ul>
             ))}
+            <br></br>
             <h1 className="project-heading">
               <strong className="purple">Tools | Knowledge</strong>
             </h1>
@@ -68,6 +76,8 @@ function About() {
                 <li>{tool}</li>
               </ul>
             ))}
+            <br></br>
+
           </Col>
         </Row>
       </Container>
